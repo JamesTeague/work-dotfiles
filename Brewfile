@@ -14,7 +14,6 @@ brew 'carthage'
 brew 'coreutils'
 brew 'double-conversion'
 brew 'fastlane'
-brew 'flux'
 brew 'fmt'
 brew 'folly'
 brew 'gdbm'
@@ -89,6 +88,7 @@ cask 'font-3270'
 cask 'font-hack-nerd-font'
 
 tap 'homebrew/cask-versions'
+cask 'firefox-developer-edition'
 
 tap 'homebrew/services'
 
@@ -107,14 +107,6 @@ brew 'jira-cli'
 tap 'bufbuild/buf'
 brew 'buf'
 
-tap 'denisidoro/tools'
-
-tap 'derailed/k9s'
-
-tap 'derailed/popeye'
-
-tap 'fluxcd/tap'
-
 tap 'hashicorp/tap'
 
 tap 'rcmdnk/file'
@@ -122,10 +114,6 @@ brew 'brew-file'
 
 tap 'romkatv/powerlevel10k'
 brew 'powerlevel10k'
-
-tap 'sambadevi/powerlevel9k'
-
-tap 'simeji/jid'
 
 tap 'tilt-dev/tap'
 
