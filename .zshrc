@@ -119,9 +119,6 @@ source $ZSH/oh-my-zsh.sh
 alias gitlog="git log --graph --decorate --oneline"
 alias prune-branches="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d"
 
-export CONNECTION_STRING="Host=localhost;Port=1433;Database=master;Username=sa;Password=Testing1!"
-export STREAM_NAME="AWR-D-XX-KIN-CoreProjects-UE1"
-
 getToken() {
   wd token-client
   ./token-client | pbcopy
