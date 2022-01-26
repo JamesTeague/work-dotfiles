@@ -13,9 +13,6 @@ fi
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export GOPRIVATE="scm.bluebeam.com/nw/proto"
-export GITHUB_TOKEN="efb252ed1b345aada88f0b560ce826ab9d83689f"
-export GITHUB_USER="JamesTeague"
-export JIRA_API_TOKEN="House_fish26"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jteague/.oh-my-zsh"
 
@@ -122,10 +119,6 @@ source $ZSH/oh-my-zsh.sh
 alias gitlog="git log --graph --decorate --oneline"
 alias prune-branches="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d"
 
-# export AwsDevKey=AKIAZEG332OWDPEM6PF4
-# export AwsDevSecret=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
-# export AWS_ACCESS_KEY_ID=AKIAZEG332OWDPEM6PF4
-# export AWS_SECRET_ACCESS_KEY=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
 export CONNECTION_STRING="Host=localhost;Port=1433;Database=master;Username=sa;Password=Testing1!"
 export STREAM_NAME="AWR-D-XX-KIN-CoreProjects-UE1"
 
@@ -140,6 +133,9 @@ compinit add-zsh-hook chpwd
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Export Secret Keys
+[[ ! -f ~/.secret-keys.zsh ]] || source ~/.secret-keys.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
