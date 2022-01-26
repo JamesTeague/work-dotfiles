@@ -107,11 +107,27 @@ brew 'jira-cli'
 tap 'bufbuild/buf'
 brew 'buf'
 
+tap 'denisidoro/tools'
+
+tap 'derailed/k9s'
+
+tap 'derailed/popeye'
+
+tap 'fluxcd/tap'
+
+tap 'hashicorp/tap'
+
 tap 'rcmdnk/file'
 brew 'brew-file'
 
 tap 'romkatv/powerlevel10k'
 brew 'powerlevel10k'
+
+tap 'sambadevi/powerlevel9k'
+
+tap 'simeji/jid'
+
+tap 'tilt-dev/tap'
 
 tap 'wix/brew'
 brew 'applesimutils'
