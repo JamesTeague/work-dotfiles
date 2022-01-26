@@ -1,8 +1,5 @@
 tap "ankitpokhrel/jira-cli"
 tap "bufbuild/buf"
-tap "derailed/k9s"
-tap "derailed/popeye"
-tap "fluxcd/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -29,9 +26,6 @@ brew "mas"
 brew "minikube"
 brew "protobuf"
 brew "mosh"
-brew "mysql"
-brew "postgresql"
-brew "python@3.8"
 brew "python@3.9"
 brew "ruby@2.7"
 brew "slides"
@@ -43,7 +37,6 @@ brew "zsh-completions"
 brew "zsh-fast-syntax-highlighting"
 brew "ankitpokhrel/jira-cli/jira-cli"
 brew "bufbuild/buf/buf"
-brew "fluxcd/tap/flux"
 brew "hashicorp/tap/terraform"
 brew "romkatv/powerlevel10k/powerlevel10k"
 brew "tilt-dev/tap/tilt"
@@ -51,13 +44,5 @@ brew "wix/brew/applesimutils"
 cask "font-hack-nerd-font"
 cask "react-native-debugger"
 cask "rectangle"
-mas "Amphetamine", id: 937984704
+
 mas "Bitwarden", id: 1352778147
-mas "DuckDuckGo Privacy Essentials", id: 1482920575
-mas "HealthGuard", id: 1529162295
-mas "Hush", id: 1544743900
-mas "Icon Set Creator", id: 939343785
-mas "iMovie", id: 408981434
-mas "PiPifier", id: 1160374471
-mas "The Unarchiver", id: 425424353
-mas "Xcode", id: 497799835
