@@ -93,8 +93,13 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 
 tap 'homebrew/cask'
+cask 'alfred'
+cask 'discord'
+cask 'postman'
 cask 'react-native-debugger'
 cask 'rectangle'
+cask 'virtualbox'
+cask 'ytmdesktop-youtube-music'
 
 tap 'ankitpokhrel/jira-cli'
 brew 'jira-cli'
