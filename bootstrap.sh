@@ -6,11 +6,10 @@ read git_username;
 echo git email:
 read git_email;
 
-echo Brewfile repo:
-read brewfile_repo;
-
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   sudo apt-get install zsh;
+  chsh -s /bin/zsh;
+elif [[ "$OSTYPE" == "darwin"* ]]; then
   chsh -s /bin/zsh;
 fi
 
@@ -22,16 +21,20 @@ then
   if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zprofile; 
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)";
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 fi
 
-echo Installing brew packages from Brewfile...
-brew install rcmdnk/file/brew-file;
-brew file set_repo -r $brewfile_repo;
+echo Setting repo...
+brew set_repo;
+echo Installing packages... 
 brew file install;
 
+
 echo Configuring git...
-git config --global core.editor nvim;
+git config --global core.editor vim;
 git config --global push.default simple;
 git config --global core.autocrlf input;
 git config --global user.name $git_username;
