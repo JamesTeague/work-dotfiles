@@ -96,6 +96,7 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 cask 'font-3270'
 cask 'font-hack-nerd-font'
+cask 'font-hasklig'
 
 tap 'homebrew/cask-versions'
 cask 'firefox-developer-edition'
