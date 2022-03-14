@@ -55,6 +55,7 @@ brew 'openjdk@11'
 brew 'openssl@1.1'
 brew 'pcre'
 brew 'pcre2'
+brew 'pnpm'
 brew 'postgresql'
 brew 'protobuf'
 brew 'python@3.10'
@@ -73,6 +74,7 @@ brew 'terminal-notifier'
 brew 'terraform'
 brew 'tilt'
 brew 'utf8proc'
+brew 'volta'
 brew 'watchman'
 brew 'xz'
 brew 'yarn'
@@ -98,12 +100,13 @@ tap 'homebrew/services'
 tap 'homebrew/cask'
 cask 'alfred'
 cask 'discord'
+cask 'intellij-idea'
 cask 'iterm2'
 cask 'postman'
 cask 'react-native-debugger'
 cask 'rectangle'
 cask 'slack'
-cask 'virtualbox'
+cask 'tuple'
 cask 'ytmdesktop-youtube-music'
 
 tap 'ankitpokhrel/jira-cli'
@@ -126,6 +129,6 @@ tap 'wix/brew'
 brew 'applesimutils'
 
 # App Store applications
-mas 'Bitwarden (1.30.0)', id: 1352778147
-mas 'HealthGuard (4.0)', id: 1529162295
-mas 'Xcode (13.2.1)', id: 497799835
+mas 'Bitwarden (1.31.3)', id: 1352778147
+mas 'Gifox (2.3.1)', id: 1461845568
+mas 'PiPifier (1.3.1)', id: 1160374471
