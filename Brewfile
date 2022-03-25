@@ -140,6 +140,6 @@ tap 'wix/brew'
 brew 'applesimutils'
 
 # App Store applications
-mas 'Bitwarden (1.32.0)', id: 1352778147
+mas 'Bitwarden (1.32.1)', id: 1352778147
 mas 'Gifox (2.3.1)', id: 1461845568
 mas 'PiPifier (1.3.1)', id: 1160374471
